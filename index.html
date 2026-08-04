@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HP Heating & Air | Henry Pituch — Pittsburgh, PA</title>
+  <meta name="description" content="HP Heating & Air — Henry Pituch. 35+ years serving Pittsburgh. Over 30,000 homes serviced. Call direct: (412) 973-9488.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .tab-active {
+      border-bottom: 3px solid #dc2626;
+      color: #dc2626;
+      font-weight: bold;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Sticky Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+
+      <!-- HP Logo (matches shirt) -->
+      <div class="flex items-center space-x-3">
+        <div class="w-36 md:w-44 flex items-center">
+          <svg viewBox="0 0 240 120" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+            <!-- H — Blue with Red stroke -->
+            <path d="M 15 15 L 42 15 L 42 50 L 68 50 L 68 15 L 95 15 L 95 105 L 68 105 L 68 70 L 42 70 L 42 105 L 15 105 Z"
+                  fill="#2563eb" stroke="#dc2626" stroke-width="2.5"/>
+            <!-- P — Red with Blue stroke -->
+            <path d="M 145 15 L 205 15 C 225 15 225 58 205 58 L 172 58 L 172 105 L 145 105 Z M 172 35 L 198 35 C 205 35 205 42 198 42 L 172 42 Z"
+                  fill="#dc2626" stroke="#2563eb" stroke-width="2.5" fill-rule="evenodd"/>
+            <!-- Center emblem: Sun (left/red) + Snowflake (right/blue) -->
+            <g transform="translate(120, 60)">
+              <path d="M 0 -45 L -7 -25 L -22 -38 L -16 -18 L -38 -22 L -25 -7 L -45 0 L -25 7 L -38 22 L -16 18 L -22 38 L -7 25 L 0 45 Z" fill="#dc2626"/>
+              <path d="M 0 -18 A 18 18 0 0 0 0 18 Z" fill="#dc2626"/>
+              <path d="M 0 -45 L 8 -24 L 23 -37 L 16 -17 L 37 -23 L 24 -7 L 45 0 L 24 7 L 37 23 L 16 17 L 23 37 L 8 24 L 0 45 Z" fill="#2563eb"/>
+              <path d="M 0 -18 A 18 18 0 0 1 0 18 Z" fill="#2563eb"/>
+              <path d="M 5 -30 L 14 -30 M 10 -20 L 22 -20 M 18 -10 L 28 -5 M 18 10 L 28 5 M 10 20 L 22 20 M 5 30 L 14 30"
+                    stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <div class="border-l-2 border-slate-200 pl-3">
+          <div class="font-black text-xl leading-none text-blue-900 tracking-tight">HEATING & AIR</div>
+          <div class="text-xs text-slate-500 font-bold tracking-wide mt-0.5">35+ YEARS SERVING PITTSBURGH</div>
+        </div>
+      </div>
+
+      <!-- Call Button -->
+      <a href="tel:4129739488" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-5 rounded-lg flex items-center space-x-2 transition shadow">
+        <i class="fas fa-phone"></i>
+        <span class="hidden sm:inline">(412) 973-9488</span>
+        <span class="sm:hidden">Call Now</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-slate-900 text-white py-14 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-blue-600 text-white text-xs uppercase font-bold tracking-widest px-3 py-1 rounded-full mb-4">
+        35+ Years Serving Pittsburgh
+      </span>
+      <h1 class="text-3xl md:text-5xl font-black mb-3">Trusted Local HVAC by Henry Pituch</h1>
+      <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-8">
+        Over 30,000 local homes served. Honest repairs, straight answers, no sales reps — you deal directly with Henry.
+      </p>
+      <div class="grid grid-cols-3 gap-3 max-w-2xl mx-auto text-center text-xs md:text-sm">
+        <div class="bg-slate-800 p-3 rounded-xl border border-slate-700">
+          <i class="fas fa-calendar-check text-blue-400 text-xl mb-1"></i>
+          <div class="font-bold">35 Years</div>
+          <div class="text-slate-400 text-xs">Local Experience</div>
+        </div>
+        <div class="bg-slate-800 p-3 rounded-xl border border-slate-700">
+          <i class="fas fa-users text-red-400 text-xl mb-1"></i>
+          <div class="font-bold">30,000+</div>
+          <div class="text-slate-400 text-xs">Homes Serviced</div>
+        </div>
+        <div class="bg-slate-800 p-3 rounded-xl border border-slate-700">
+          <i class="fas fa-user-shield text-green-400 text-xl mb-1"></i>
+          <div class="font-bold">Direct Access</div>
+          <div class="text-slate-400 text-xs">Deal With Henry</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tools + Form -->
+  <section class="py-10 px-4 max-w-4xl mx-auto">
+
+    <!-- Tabs -->
+    <div class="flex border-b border-slate-300 mb-6 bg-white rounded-t-xl overflow-hidden shadow-sm">
+      <button onclick="switchTab('wizard')" id="tab-wizard" class="flex-1 py-3 text-center text-sm font-semibold text-slate-600 hover:text-slate-900 tab-active">
+        <i class="fas fa-tools mr-2"></i>Issue Diagnostic
+      </button>
+      <button onclick="switchTab('estimator')" id="tab-estimator" class="flex-1 py-3 text-center text-sm font-semibold text-slate-600 hover:text-slate-900">
+        <i class="fas fa-calculator mr-2"></i>Cost Estimator
+      </button>
+    </div>
+
+    <!-- Tab 1: Diagnostic Wizard -->
+    <div id="view-wizard" class="bg-white p-6 rounded-b-2xl rounded-tr-2xl shadow-xl border border-slate-200">
+      <h2 class="text-xl font-bold text-slate-900 mb-1">Guided Troubleshooter</h2>
+      <p class="text-sm text-slate-500 mb-6">Pick your system and symptom — we'll summarize what might be wrong before you call.</p>
+
+      <div id="wiz-step-1" class="space-y-4">
+        <label class="block font-bold text-slate-800">What system is having an issue?</label>
+        <div class="grid grid-cols-2 gap-4">
+          <button onclick="selectSystem('Air Conditioning')" class="p-5 border-2 border-slate-200 rounded-xl hover:border-blue-600 hover:bg-blue-50 text-center transition group">
+            <i class="fas fa-snowflake text-4xl text-blue-500 mb-2 group-hover:scale-110 transition"></i>
+            <div class="font-bold text-slate-800">Air Conditioning</div>
+          </button>
+          <button onclick="selectSystem('Heating / Furnace')" class="p-5 border-2 border-slate-200 rounded-xl hover:border-red-600 hover:bg-red-50 text-center transition group">
+            <i class="fas fa-fire text-4xl text-red-500 mb-2 group-hover:scale-110 transition"></i>
+            <div class="font-bold text-slate-800">Heating / Furnace</div>
+          </button>
+        </div>
+      </div>
+
+      <div id="wiz-step-2" class="hidden space-y-4">
+        <div class="flex items-center justify-between">
+          <label class="font-bold text-slate-800">What are you seeing?</label>
+          <button onclick="resetWizard()" class="text-xs text-blue-600 underline">Start Over</button>
+        </div>
+        <div id="symptom-options" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+      </div>
+
+      <div id="wiz-step-3" class="hidden space-y-4 pt-4 border-t border-slate-200">
+        <div class="bg-blue-50 border border-blue-200 p-4 rounded-xl">
+          <h3 class="font-bold text-blue-900 mb-1" id="diag-title"></h3>
+          <p class="text-xs text-blue-800 mb-3" id="diag-desc"></p>
+          <div class="text-xs font-semibold text-slate-600 bg-white p-2.5 rounded border border-blue-100" id="diag-advice"></div>
+        </div>
+        <button onclick="jumpToForm()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition text-center shadow">
+          Send This Diagnostic to Henry for a Callback
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab 2: Cost Estimator -->
+    <div id="view-estimator" class="hidden bg-white p-6 rounded-2xl shadow-xl border border-slate-200">
+      <h2 class="text-xl font-bold text-slate-900 mb-1">Ballpark Cost Estimator</h2>
+      <p class="text-sm text-slate-500 mb-6">Adjust system age and job type to see typical Pittsburgh-area service ranges.</p>
+
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between text-sm font-bold mb-1">
+            <span>System Age:</span>
+            <span id="age-val" class="text-blue-700">5 Years Old</span>
+          </div>
+          <input type="range" id="age-slider" min="1" max="25" value="5" oninput="updateEstimator()" class="w-full accent-blue-600">
+        </div>
+
+        <div>
+          <label class="block font-bold text-sm text-slate-800 mb-2">Job Complexity:</label>
+          <div class="grid grid-cols-3 gap-2">
+            <button onclick="setComplexity('minor')" id="btn-minor" class="p-2 text-xs font-bold border rounded-lg bg-blue-600 text-white">Minor (Capacitor/Filter)</button>
+            <button onclick="setComplexity('mid')" id="btn-mid" class="p-2 text-xs font-bold border rounded-lg bg-slate-100 text-slate-700">Standard (Motor/Leak)</button>
+            <button onclick="setComplexity('major')" id="btn-major" class="p-2 text-xs font-bold border rounded-lg bg-slate-100 text-slate-700">Major (Replacement)</button>
+          </div>
+        </div>
+
+        <div class="bg-slate-100 p-4 rounded-xl border border-slate-200 text-center">
+          <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Estimated Local Service Range</div>
+          <div id="estimate-price" class="text-3xl font-black text-slate-900">$120 – $250</div>
+          <p id="estimate-note" class="text-xs text-slate-600 mt-2">Covers simple component swaps (capacitors, filters, drain line flushes).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact-form-container" class="mt-8 bg-white rounded-2xl shadow-xl border border-slate-200 p-6 md:p-8">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold text-slate-900">Request Service from Henry</h2>
+        <p class="text-slate-500 text-sm mt-1">Submit your info below — goes straight to Henry's inbox.</p>
+      </div>
+
+      <form id="contact-form" action="https://formspree.io/f/xknkyrqg" method="POST" class="space-y-4" onsubmit="handleFormSubmit(event)">
+
+        <!-- Emergency toggle -->
+        <div class="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-exclamation-triangle text-red-600"></i>
+            <span class="text-xs md:text-sm font-bold text-red-900">Emergency? (No Heat / Severe Leak)</span>
+          </div>
+          <input type="checkbox" name="is_emergency" value="YES" class="h-5 w-5 accent-red-600">
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1">Your Name</label>
+          <input type="text" name="customer_name" required placeholder="First and Last Name"
+            class="w-full border border-slate-300 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-1">Phone Number</label>
+            <input type="tel" name="phone_number" required placeholder="(412) 000-0000"
+              class="w-full border border-slate-300 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-1">Service Type</label>
+            <select name="service_type" id="service-select"
+              class="w-full border border-slate-300 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+              <option>Air Conditioning Repair</option>
+              <option>Heating / Furnace Repair</option>
+              <option>System Replacement Estimate</option>
+              <option>General Maintenance</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1">Issue Description</label>
+          <textarea id="issue-textarea" name="issue_description" rows="4" required
+            placeholder="Describe what is happening with your unit…"
+            class="w-full border border-slate-300 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn"
+          class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3.5 px-6 rounded-lg transition text-base flex items-center justify-center space-x-2 shadow">
+          <i class="fas fa-paper-plane"></i>
+          <span>Send Message to Henry</span>
+        </button>
+      </form>
+
+      <!-- Success state (hidden by default) -->
+      <div id="form-success" class="hidden text-center py-8">
+        <div class="text-green-500 text-5xl mb-3"><i class="fas fa-check-circle"></i></div>
+        <h3 class="text-xl font-bold text-slate-900 mb-1">Message Sent!</h3>
+        <p class="text-slate-600 text-sm">Henry will call you back at the number you provided. If this is an emergency, call directly: <a href="tel:4129739488" class="text-red-600 font-bold">(412) 973-9488</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="bg-slate-100 py-12 px-4 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center text-slate-900 mb-8">How Henry Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-xl mb-2">1. Quick Diagnostics</div>
+          <p class="text-slate-600 text-sm">Clear assessment of what's wrong — no jargon, no upselling.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-xl mb-2">2. Honest Options</div>
+          <p class="text-slate-600 text-sm">Targeted repair or full replacement — Henry gives you the facts and lets you decide.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-xl mb-2">3. Local Reliability</div>
+          <p class="text-slate-600 text-sm">35 years and 30,000+ homes in Greater Pittsburgh. Your neighbors trust Henry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-sm">
+    <div class="max-w-4xl mx-auto space-y-2">
+      <p class="font-bold text-white text-base">HP Heating & Air — Henry Pituch</p>
+      <p>Direct Call: <a href="tel:4129739488" class="text-red-400 font-bold hover:underline">(412) 973-9488</a></p>
+      <p class="text-xs text-slate-600 mt-2">Servicing Greater Pittsburgh and surrounding areas for over 35 years.</p>
+    </div>
+  </footer>
+
+  <script>
+    let currentSystem = '';
+    let currentComplexity = 'minor';
+
+    const symptomsData = {
+      'Air Conditioning': [
+        { label: 'Blowing warm air', desc: 'Likely refrigerant leak or bad capacitor.', tip: 'DIY hold-over: Clean outdoor coil gently with a garden hose.' },
+        { label: 'Loud buzzing or clicking', desc: 'Possible failing contactor or compressor motor relay.', tip: 'Turn system off to avoid burning the motor while you wait.' },
+        { label: 'Water leaking indoors', desc: 'Clogged condensate drain line.', tip: 'DIY: Use a wet/dry vacuum on the drain pipe outlet.' },
+        { label: 'Unit not turning on', desc: 'Tripped breaker, blown fuse, or failed thermostat.', tip: 'Check breaker panel and replace thermostat batteries first.' }
+      ],
+      'Heating / Furnace': [
+        { label: 'Blowing cold air', desc: 'Dirty flame sensor or failed hot surface igniter.', tip: 'DIY: Check air filter — a severely clogged filter cuts airflow and causes lockout.' },
+        { label: 'Clicking but won\'t start', desc: 'Ignition spark issue or pressure switch fault.', tip: 'Verify thermostat batteries are fresh and thermostat is set to Heat.' },
+        { label: 'Burning smell', desc: 'Could be dust burning off (normal early season) or motor overheating (serious).', tip: 'If smell persists more than 10 min, turn off the unit at the switch.' },
+        { label: 'Unit short-cycling', desc: 'Overheating from restricted airflow or a failing heat exchanger.', tip: 'Replace air filter and clear any blocked vents before calling.' }
+      ]
+    };
+
+    function switchTab(tab) {
+      document.getElementById('view-wizard').classList.toggle('hidden', tab !== 'wizard');
+      document.getElementById('view-estimator').classList.toggle('hidden', tab !== 'estimator');
+      document.getElementById('tab-wizard').classList.toggle('tab-active', tab === 'wizard');
+      document.getElementById('tab-estimator').classList.toggle('tab-active', tab === 'estimator');
+    }
+
+    function selectSystem(system) {
+      currentSystem = system;
+      document.getElementById('wiz-step-1').classList.add('hidden');
+      document.getElementById('wiz-step-2').classList.remove('hidden');
+      const container = document.getElementById('symptom-options');
+      container.innerHTML = '';
+      symptomsData[system].forEach((item, index) => {
+        container.innerHTML += `
+          <button onclick="selectSymptom(${index})" class="p-3 border rounded-lg text-left hover:border-blue-600 hover:bg-slate-50 transition">
+            <div class="font-bold text-sm text-slate-800">${item.label}</div>
+            <div class="text-xs text-slate-500 mt-0.5">${item.desc}</div>
+          </button>`;
+      });
+    }
+
+    function selectSymptom(index) {
+      const item = symptomsData[currentSystem][index];
+      document.getElementById('wiz-step-3').classList.remove('hidden');
+      document.getElementById('diag-title').innerText = `${currentSystem}: ${item.label}`;
+      document.getElementById('diag-desc').innerText = `What it likely means: ${item.desc}`;
+      document.getElementById('diag-advice').innerText = `Temporary hold-over check: ${item.tip}`;
+      document.getElementById('issue-textarea').value = `[Via Wizard] System: ${currentSystem} | Issue: ${item.label} | Notes: ${item.desc}`;
+    }
+
+    function resetWizard() {
+      document.getElementById('wiz-step-1').classList.remove('hidden');
+      document.getElementById('wiz-step-2').classList.add('hidden');
+      document.getElementById('wiz-step-3').classList.add('hidden');
+    }
+
+    function jumpToForm() {
+      document.getElementById('contact-form-container').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setComplexity(type) {
+      currentComplexity = type;
+      ['minor', 'mid', 'major'].forEach(t => {
+        const btn = document.getElementById(`btn-${t}`);
+        btn.className = t === type
+          ? 'p-2 text-xs font-bold border rounded-lg bg-blue-600 text-white'
+          : 'p-2 text-xs font-bold border rounded-lg bg-slate-100 text-slate-700';
+      });
+      updateEstimator();
+    }
+
+    function updateEstimator() {
+      const age = parseInt(document.getElementById('age-slider').value);
+      document.getElementById('age-val').innerText = `${age} Year${age !== 1 ? 's' : ''} Old`;
+      const price = document.getElementById('estimate-price');
+      const note = document.getElementById('estimate-note');
+      if (currentComplexity === 'minor') {
+        price.innerText = '$120 – $250';
+        note.innerText = 'Covers simple component swaps (capacitors, filters, drain line flushes).';
+      } else if (currentComplexity === 'mid') {
+        price.innerText = '$250 – $650';
+        note.innerText = 'Covers motor replacements, leak repairs, ignition modules, or circuit boards.';
+      } else {
+        if (age > 12) {
+          price.innerText = '$2,500 – $6,000+';
+          note.innerText = 'System age over 12 years — full replacement is typically the most cost-effective path.';
+        } else {
+          price.innerText = '$800 – $2,200';
+          note.innerText = 'Major component overhaul: compressor, heat exchanger, or full coil replacement.';
+        }
+      }
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending…';
+
+      const form = document.getElementById('contact-form');
+      const data = new FormData(form);
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' }
+        });
+        if (res.ok) {
+          form.classList.add('hidden');
+          document.getElementById('form-success').classList.remove('hidden');
+        } else {
+          throw new Error('Server error');
+        }
+      } catch {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Send Message to Henry';
+        alert('Something went wrong. Please call Henry directly at (412) 973-9488.');
+      }
+    }
+  </script>
+</body>
+</html>
