@@ -218,9 +218,10 @@
         <p class="text-slate-500 text-sm mt-1">Submit your info below — goes straight to Henry's inbox.</p>
       </div>
 
-      <form id="contact-form" action="https://formspree.io/f/xknkyrqg" method="POST" class="space-y-4" onsubmit="handleFormSubmit(event)">
+      <form id="contact-form" action="https://formspree.io/f/xknkyrqg" method="POST" class="space-y-4">
         <input type="hidden" name="_replyto" value="tjp1121@gmail.com">
         <input type="hidden" name="_subject" value="New Service Request — HP Heating & Air">
+        <input type="hidden" name="_next" value="https://hp-heating-air.vercel.app?success=1">
 
         <!-- Emergency toggle -->
         <div class="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
@@ -262,14 +263,14 @@
             class="w-full border border-slate-300 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none"></textarea>
         </div>
 
-        <button type="submit" id="submit-btn"
+        <button type="submit"
           class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3.5 px-6 rounded-lg transition text-base flex items-center justify-center space-x-2 shadow">
           <i class="fas fa-paper-plane"></i>
           <span>Send Message to Henry</span>
         </button>
       </form>
 
-      <!-- Success state (hidden by default) -->
+      <!-- Success banner — shown when ?success=1 in URL -->
       <div id="form-success" class="hidden text-center py-8">
         <div class="text-green-500 text-5xl mb-3"><i class="fas fa-check-circle"></i></div>
         <h3 class="text-xl font-bold text-slate-900 mb-1">Message Sent!</h3>
@@ -405,32 +406,11 @@
       }
     }
 
-    async function handleFormSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.disabled = true;
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending…';
-
-      const form = document.getElementById('contact-form');
-      const data = new FormData(form);
-
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { Accept: 'application/json' }
-        });
-        if (res.ok) {
-          form.classList.add('hidden');
-          document.getElementById('form-success').classList.remove('hidden');
-        } else {
-          throw new Error('Server error');
-        }
-      } catch {
-        btn.disabled = false;
-        btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Send Message to Henry';
-        alert('Something went wrong. Please call Henry directly at (412) 973-9488.');
-      }
+    // Show success state if redirected back with ?success=1
+    if (new URLSearchParams(window.location.search).get('success') === '1') {
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+      document.getElementById('contact-form-container').scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>
